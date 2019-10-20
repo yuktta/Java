@@ -57,7 +57,7 @@ public class SinglyLinkedList {
     public void insertNth(int data, int position) {
         checkBounds(position, 0, size);
         Node cur = head;
-        for (int i = 0; i < position; ++i) {
+        for (int i = 2; i < position; ++i) {
             cur = cur.next;
         }
         Node node = new Node(data);
